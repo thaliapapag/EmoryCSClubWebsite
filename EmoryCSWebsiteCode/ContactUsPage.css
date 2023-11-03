@@ -1,0 +1,134 @@
+@font-face { /*adds the font "Electrolize"*/
+    font-family: 'Electrolize';
+    src: url('Electrolize/Electrolize-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0; /*No spacing between edges and browser window*/
+    min-height: 100vh; /*ensures height of atleast 100vh*/
+    background-color: black;
+    font-family: 'Electrolize', sans-serif;
+    display: grid;
+    justify-content: center; /*centers content horizontally*/
+    align-items: center; /*centers content vertically*/
+    margin-top: 10vw;
+}
+
+/*Menu code- standard accross all files*/
+
+.menu {
+    top: 0;
+    width: 100%;
+    height: 3vw;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    text-align: center;
+    padding: 2vw 0; 
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 2.5vw;
+    padding: 2vw 5vw;
+    border: 1vw;
+    color: whitesmoke;
+    font-family: 'Electrolize', sans-serif;
+}
+
+.menu a:hover{
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 0 0 10px rgba(0, 0, 225, 0.8),
+                 0 0 20px rgba(0, 0, 225, 0.6),
+                 0 0 30px rgba(0, 0, 225, 0.4),
+                 0 0 40px rgba(0, 0, 225, 0.2);
+    animation: glow 2s linear infinite;
+}
+
+/*For form*/
+
+.container {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.container h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    text-shadow:0 0 10px rgba(0, 0, 225, 0.9),
+                0 0 20px rgba(0, 0, 225, 0.8),
+                0 0 30px rgba(0, 0, 225, 0.7),
+                0 0 40px rgba(0, 0, 225, 0.6);
+   animation: glow 2s linear infinite;
+}
+
+.container .email {
+    border: .25vw solid white; 
+    border-color: white;
+    border-radius: 10px;
+    width: 60vw;
+    height: 15vw;
+    padding: 3vw;
+    font-size: 2vw;
+}
+
+
+.container .email .text-glow{
+    text-shadow:0 0 10px rgba(0, 0, 225, 0.9),
+                0 0 20px rgba(0, 0, 225, 0.8),
+                0 0 30px rgba(0, 0, 225, 0.7),
+                0 0 40px rgba(0, 0, 225, 0.6);
+    animation: glow 2s linear infinite;
+}
+
+.container .email .text-glow-2{
+    text-shadow:0 0 10px rgba(0, 0, 225, 0.9),
+                0 0 20px rgba(0, 0, 225, 0.8),
+                0 0 30px rgba(0, 0, 225, 0.7),
+                0 0 40px rgba(0, 0, 225, 0.6);
+    animation: glow 2s linear infinite;
+}
+
+.container .email .email-1{
+    display:flex;
+}
+
+.container .email .email-2{
+    display:flex;
+}
+
+.container .email h2{
+    padding: 0 .5vw;
+}
+
+/*footer css code- standard accross all files*/
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3vw;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*left: 50%;*/
+}
+
+.footer img {
+    padding: 0 20px; 
+    width: auto;
+    height: 2vw;
+}
+
+.footer img:hover {
+    /*box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);*/
+    transform: scale(1.05);
+}
+
